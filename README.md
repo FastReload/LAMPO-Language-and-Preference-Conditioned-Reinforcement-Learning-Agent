@@ -312,9 +312,9 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{lampo2025,
   title={LAMPO: Language and Preference Conditioned Reinforcement Learning},
-  author={Anonymous},
+  author={FastReload},
   year={2025},
-  howpublished={\url{https://github.com/yourusername/lampo}}
+  howpublished={\url{https://github.com/FastReload/LAMPO-Language-and-Preference-Conditioned-Reinforcement-Learning-Agent}}
 }
 ```
 
@@ -328,9 +328,13 @@ This project is released under the MIT License. See LICENSE file for details.
 - PyTorch team for the deep learning framework
 - The RLHF and preference learning research community
 
+## Repository
+
+GitHub: [LAMPO-Language-and-Preference-Conditioned-Reinforcement-Learning-Agent](https://github.com/FastReload/LAMPO-Language-and-Preference-Conditioned-Reinforcement-Learning-Agent)
+
 ## Contact
 
-For questions, issues, or contributions, please open an issue on GitHub or contact the maintainers.
+For questions, issues, or contributions, please open an issue on the [GitHub repository](https://github.com/FastReload/LAMPO-Language-and-Preference-Conditioned-Reinforcement-Learning-Agent/issues).
 
 ---
 
