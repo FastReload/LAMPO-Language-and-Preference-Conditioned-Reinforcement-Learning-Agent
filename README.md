@@ -1,5 +1,7 @@
 # LAMPO: Language and Preference Conditioned Reinforcement Learning
 
+![Pareto Frontiers](pareto_frontiers_all_envs%20(3).png)
+
 ## Overview
 
 LAMPO (Language and Preference Conditioned RL) is an advanced reinforcement learning framework that trains agents to adapt their behavior based on both numerical preference parameters (lambda) and natural language prompts. This implementation uses Proximal Policy Optimization (PPO) with custom reward decomposition to enable multi-objective learning and dynamic preference adaptation.
@@ -191,12 +193,55 @@ LAMPO agents successfully learn to:
 
 The trained agents exhibit clear Pareto frontiers showing the fundamental trade-off between speed and safety objectives. This validates the multi-objective reward decomposition approach.
 
+#### CartPole
+![CartPole Pareto](main_pareto_cart.png)
+
+#### LunarLander
+![LunarLander Pareto](main_pareto_ll.png)
+
+#### MountainCar
+![MountainCar Pareto](main_pareto_mc.png)
+
+### RLHF Comparison
+
+Performance improvements after RLHF fine-tuning across all environments:
+
+![CartPole RLHF](rlhf_comparison_CartPole_v1%20(1).png)
+![LunarLander RLHF](rlhf_comparison_LunarLander_v3%20(1).png)
+![MountainCar RLHF](rlhf_comparison_MountainCar_v0%20(1).png)
+
+### Preference Analysis
+
+![Preference Analysis](preference_analysis%20(3).png)
+![Per Environment Analysis](per_environment_analysis%20(3).png)
+![Safety vs Speed](safety_speed_analysis%20(1).png)
+
+### Reward Model Evaluation
+
+![Reward Model Evaluation](reward_model_evaluation%20(3).png)
+
+### Inter-Annotator Agreement
+
+![Inter-Annotator Agreement](inter_annotator_agreement%20(3).png)
+
 ## Project Structure
 
 ```
 .
-├── LAMPOa.ipynb              # Main notebook with complete implementation
-└── README.md                  # This file
+├── LAMPO.ipynb                                    # Main notebook with complete implementation
+├── README.md                                      # This file
+├── pareto_frontiers_all_envs (3).png             # Combined Pareto frontiers visualization
+├── main_pareto_cart.png                          # CartPole Pareto frontier
+├── main_pareto_ll.png                            # LunarLander Pareto frontier
+├── main_pareto_mc.png                            # MountainCar Pareto frontier
+├── rlhf_comparison_CartPole_v1 (1).png           # RLHF performance comparison
+├── rlhf_comparison_LunarLander_v3 (1).png        # RLHF performance comparison
+├── rlhf_comparison_MountainCar_v0 (1).png        # RLHF performance comparison
+├── preference_analysis (3).png                    # Preference distribution analysis
+├── per_environment_analysis (3).png              # Per-environment metrics
+├── safety_speed_analysis (1).png                 # Safety vs speed trade-offs
+├── reward_model_evaluation (3).png               # Reward model accuracy
+└── inter_annotator_agreement (3).png             # Annotation consistency metrics
 ```
 
 ## Implementation Details
